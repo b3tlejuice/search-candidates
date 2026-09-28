@@ -9,16 +9,17 @@
 | итоговое решение (`config.yaml`) | **0.887** | _—_ |
 | без дообучения (`config_no_finetune.yaml`) | 0.840 | _—_ |
 
-## Запуск
+## Запуск внутри venv
 
 ```bash
-pip install -r requirements.txt && pip install -e .
-# train.parquet, benchmark_queries.parquet, benchmark_items.parquet -> data/raw/
-
-python scripts/run_all.py           # все этапы по порядку, остановка при ошибке
+# Положите train.parquet, benchmark_queries.parquet, benchmark_items.parquet -> data/raw/
+pip install -r requirements.txt
+pip install torch --index-url https://download.pytorch.org/whl/cu126
+pip install -e .
+python scripts/run_all.py           # все этапы по порядку
 ```
 
-Флаги `run_all.py`: `--no-eval` — без оценки на валидации, `--config config_no_finetune.yaml` — без дообучения. Уже обученная модель повторно не обучается.
+Флаги `run_all.py`: `--no-eval` — без оценки на валидации, Уже обученная модель повторно не обучается.
 
 По этапам:
 

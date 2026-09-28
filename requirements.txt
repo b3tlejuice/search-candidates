@@ -5,7 +5,8 @@ scipy
 scikit-learn
 pymorphy3
 pyyaml
-torch
+#torch нужно скачать gpu версию, подробнее в readme
+transformers[torch]
 sentence-transformers
-datasets    # для дообучения (finetune)
+datasets # для дообучения (finetune)
 pytest
