@@ -1,0 +1,11 @@
+numpy
+pandas
+pyarrow
+scipy
+scikit-learn
+pymorphy3
+pyyaml
+torch
+sentence-transformers
+datasets    # для дообучения (finetune)
+pytest

@@ -1,0 +1,14 @@
+# взято из https://gist.github.com/GhostofGoes/75051c4aeb215bc3cf48c10f5454b399
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avito-candidates"
+version = "0.1.0"
+description = "Avito BootCamp September 2026 NLP"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
